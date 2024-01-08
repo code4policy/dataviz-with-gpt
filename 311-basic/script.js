@@ -5,7 +5,7 @@ d3.csv('311_boston_data.csv').then(data => {
         d.Count = +d.Count; // Convert Count to a number
     });
 
-    // Sort the data by Count in descending order
+    // Sort the data by Count in descending order. first step to top 10
     data.sort((a, b) => b.Count - a.Count);
 
     // Take only the top 10 types
