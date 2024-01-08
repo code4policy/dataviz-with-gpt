@@ -4,7 +4,7 @@
 library(dplyr)
 
 # Read the CSV file into a data frame
-data <- read.csv('boston_311_2023.csv', header = TRUE)
+data <- read.csv('boston_311_2023_raw.csv', header = TRUE)
 
 # Group the data by the 'reason' column and count the occurrences of each reason
 reason_counts <- data %>%
