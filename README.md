@@ -48,7 +48,7 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 1. Make a bar chart of the top 10 reasons for 311 calls in the past year (hint: use the `reason` column in the data)
 2. The initial bar chart may not look quite right. With the help of ChatGPT, fix anything that looks immediately off (for example, sometimes the axis labels overlap or the bars are out of order etc...)
 3. Give the bar chart a good headline and subheadline
-4. Make the bar chart vertical instead of horizontal
+4. Make the bar chart horizontal instead of vertical
 5. Change the default colors, text size, or anything else
 6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
 
