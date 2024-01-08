@@ -33,7 +33,7 @@ This lesson assumes you are familiar with:
 <!-- We demo some exploratory data analysis with ChatGPT and R -->
 <!-- backup in python notebook just in case -->
 
-### Part 1: Making stuff
+### Part 1: Build with GPT
 
 Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your goal is to, with it's help, make a D3 visualization of all of the 311 calls in Boston from 2023. 
 
@@ -44,14 +44,12 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 5. Change the default colors, text size, or anything else
 6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
 
-Bonus: Create a dropdown box for the "neighborhood" column which allows users to select a neighborhood and have the chart show only requests from that neighborhood.
+Bonus: Go grab the raw csv, and create a bar chart for the different that shows the top 10 departments `subject` and has a drop down menu for each name of the `neighborhood`
 
 <!-- Debreif: Aarushi does it and shares -->
 <!-- Submit to Prompt bank: fill out AI form -->
 
-### Part 2: Making two charts
-
-Make one for 2022 and 2023
+# Part 2: Analyze what we built
 
 <!-- Students try to figure it out -->
 <!-- Aarushi breaks down the code / mental models needed -->

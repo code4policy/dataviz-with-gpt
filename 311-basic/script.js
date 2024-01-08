@@ -1,5 +1,3 @@
-// script.js
-
 // Load CSV data
 d3.csv('311_boston_data.csv').then(data => {
     // Process the data
@@ -16,7 +14,7 @@ d3.csv('311_boston_data.csv').then(data => {
     // Set up SVG container
     const svgWidth = 800;
     const svgHeight = 500;
-    const margin = { top: 40, right: 40, bottom: 80, left: 120 };
+    const margin = { top: 40, right: 40, bottom: 80, left: 200 };
     const width = svgWidth - margin.left - margin.right;
     const height = svgHeight - margin.top - margin.bottom;
 
@@ -29,7 +27,7 @@ d3.csv('311_boston_data.csv').then(data => {
 
     // Create scales
     const yScale = d3.scaleBand()
-        .domain(top10Data.map(d => d.Type))
+        .domain(top10Data.map(d => d.Reason))
         .range([0, height])
         .padding(0.2);
 
@@ -43,7 +41,7 @@ d3.csv('311_boston_data.csv').then(data => {
         .enter()
         .append('rect')
         .attr('x', 0)
-        .attr('y', d => yScale(d.Type))
+        .attr('y', d => yScale(d.Reason))
         .attr('width', d => xScale(d.Count))
         .attr('height', yScale.bandwidth())
         .attr('fill', 'blue')
@@ -61,4 +59,12 @@ d3.csv('311_boston_data.csv').then(data => {
     svg.append('g')
         .attr('transform', `translate(0,${height})`)
         .call(d3.axisBottom(xScale));
+
+    // Add attribution line at the bottom
+    svg.append('text')
+        .attr('x', width / 2)
+        .attr('y', height + margin.top + 20) // Adjust the y-coordinate for proper placement
+        .attr('text-anchor', 'left')
+        .style('font-size', '12px')
+        .text('Chart created by Aarushi Sahejpal. Data source: Boston.gov');
 });
