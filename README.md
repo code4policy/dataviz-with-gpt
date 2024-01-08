@@ -32,7 +32,15 @@ This lesson assumes you are familiar with:
 
 <!-- We demo some exploratory data analysis with ChatGPT and R -->
 <!-- backup in python notebook just in case -->
+https://data.boston.gov/dataset/311-service-requests
 
+Download data of all 311 calls in Boston from 2023
+```
+wget -O boston_311_2023.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/e6013a93-1321-4f2a-bf91-8d8a02f1e62f/download/tmpc0m94i5x.csv
+```
+```
+wget -O boston_311_2022.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/81a7b022-f8fc-4da5-80e4-b160058ca207/download/tmpfm8veglw.csv
+```
 ### Part 1: Making stuff
 
 Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your goal is to, with it's help, make a D3 visualization of all of the 311 calls in Boston from 2023. 
