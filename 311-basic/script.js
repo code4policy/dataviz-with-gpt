@@ -27,7 +27,7 @@ d3.csv('311_boston_data.csv').then(data => {
 
     // Create scales
     const yScale = d3.scaleBand()
-        .domain(top10Data.map(d => d.Reason))
+        .domain(top10Data.map(d => d.reason))
         .range([0, height])
         .padding(0.2);
 
@@ -41,7 +41,7 @@ d3.csv('311_boston_data.csv').then(data => {
         .enter()
         .append('rect')
         .attr('x', 0)
-        .attr('y', d => yScale(d.Reason))
+        .attr('y', d => yScale(d.reason))
         .attr('width', d => xScale(d.Count))
         .attr('height', yScale.bandwidth())
         .attr('fill', 'blue')
