@@ -1,5 +1,22 @@
 # Dataviz With GPT
 
+<!-- Plan for today 
+
+- Dataviz Principles (recap - slides) + Dataviz Rubric  
+- Explore the data in R (w/ ChatGPT)
+- ChatGPT D3 (below Part 1 and Part 2)
+
+
+TODO: 
+
+- Dhrumil will bring in slides from dataviz principles
+- Dhrumil will make exploratory data viz (GPT 4 or python notebook)
+- Aarushi will make part 1 (311-basic, 311-complex (with bonus))
+- Aarushi materials to explain D3
+- Dhrumil bring in the apple stock chart stuff (but use 311 data 2022)
+
+-->
+
 ## Learning Objectives
 
 Students will be able to:
@@ -13,7 +30,10 @@ This lesson assumes you are familiar with:
 
 ## Instructions
 
-<!-- - We demo some exploratory data analysis with ChatGPT and R -->
+<!-- We demo some exploratory data analysis with ChatGPT and R -->
+<!-- backup in python notebook just in case -->
+
+### Part 1: Making stuff
 
 Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your goal is to, with it's help, make a D3 visualization of all of the 311 calls in Boston from 2023. 
 
@@ -25,3 +45,17 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
 
 Bonus: Create a dropdown box for the "neighborhood" column which allows users to select a neighborhood and have the chart show only requests from that neighborhood.
+
+<!-- Debreif: Aarushi does it and shares -->
+<!-- Submit to Prompt bank: fill out AI form -->
+
+### Part 2: Making two charts
+
+Make one for 2022 and 2023
+
+<!-- Students try to figure it out -->
+<!-- Aarushi breaks down the code / mental models needed -->
+    <!-- Talk about SVGs -->
+    <!-- Select a part of the Body (remember CSS Selectors?) -->
+<!-- Dhrumil brings in the stuff from the apple lesson (make 2 charts, not conflicting etc...learn about functions) -->
+
