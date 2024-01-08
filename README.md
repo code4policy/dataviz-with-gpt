@@ -1,22 +1,5 @@
 # Dataviz With GPT
 
-<!-- Plan for today 
-
-- Dataviz Principles (recap - slides) + Dataviz Rubric  
-- Explore the data in R (w/ ChatGPT)
-- ChatGPT D3 (below Part 1 and Part 2)
-
-
-TODO: 
-
-- Dhrumil will bring in slides from dataviz principles
-- Dhrumil will make exploratory data viz (GPT 4 or python notebook)
-- Aarushi will make part 1 (311-basic, 311-complex (with bonus))
-- Aarushi materials to explain D3
-- Dhrumil bring in the apple stock chart stuff (but use 311 data 2022)
-
--->
-
 ## Learning Objectives
 
 Students will be able to:
@@ -35,13 +18,22 @@ This lesson assumes you are familiar with:
 https://data.boston.gov/dataset/311-service-requests
 
 
-### Part 1: Build with GPT
+### Part 1: Download the data
 
 Download data of all 311 calls in Boston from 2023
 ```
-wget -O boston_311_2023.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/e6013a93-1321-4f2a-bf91-8d8a02f1e62f/download/tmpc0m94i5x.csv
+wget -O boston_311_2023_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/e6013a93-1321-4f2a-bf91-8d8a02f1e62f/download/tmpc0m94i5x.csv
 ```
-### Part 1: Making stuff
+
+Run `pivot.py` as shown below to make a new file that has the reasons for 311 calls and their counts
+
+```
+python pivot.py 
+```
+
+this will output a file called `boston_311_2023.csv
+
+### Part 2: Build a D3 visualization with ChatGPT
 
 Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your goal is to, with it's help, make a D3 visualization of all of the 311 calls in Boston from 2023. 
 
@@ -54,14 +46,7 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 
 Bonus: Go grab the raw csv, and create a bar chart that shows the top 10 departments `subject` by number of 311 calls and has a drop down menu for each name of the `neighborhood`
 
-<!-- Debreif: Aarushi does it and shares -->
-<!-- Submit to Prompt bank: fill out AI form -->
 
-# Part 2: Analyze what we built
+### Part 3: Reflect
 
-<!-- Students try to figure it out -->
-<!-- Aarushi breaks down the code / mental models needed -->
-    <!-- Talk about SVGs -->
-    <!-- Select a part of the Body (remember CSS Selectors?) -->
-<!-- Dhrumil brings in the stuff from the apple lesson (make 2 charts, not conflicting etc...learn about functions) -->
-
+What worked? What didn't? Review your classmates' conversations with ChatGPT in Slack. Fill out an AI reflection form about your experience today.
