@@ -44,7 +44,7 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 5. Change the default colors, text size, or anything else
 6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
 
-Bonus: Go grab the raw csv, and create a bar chart that shows the top 10 departments `subject` by number of 311 calls and has a drop down menu for each name of the `neighborhood`
+Bonus: Create a button that shows an extended bar chart with all of the remaining counts of the `reason` column. 
 
 
 ### Part 3: Reflect
