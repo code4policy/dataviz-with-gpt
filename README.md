@@ -1,0 +1,27 @@
+# Dataviz With GPT
+
+## Learning Objectives
+
+Students will be able to:
+- Use ChatGPT to build something in a programming language they're not familiar with (D3) #learning-how-to-learn
+
+## Pre-requisites
+
+This lesson assumes you are familiar with:
+- Basic HTML, CSS and JavaScript
+- Using GitHub
+
+## Instructions
+
+<!-- - We demo some exploratory data analysis with ChatGPT and R -->
+
+Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your goal is to, with it's help, make a D3 visualization of all of the 311 calls in Boston from 2023. 
+
+1. Make a bar chart of the top 10 reasons for 311 calls in the past year (hint: use the `reason` column in the data)
+2. The initial bar chart may not look quite right. With the help of ChatGPT, fix anything that looks immediately off (for example, sometimes the axis labels overlap or the bars are out of order etc...)
+3. Give the bar chart a good headline and subheadline
+4. Make the bar chart vertical instead of horizontal
+5. Change the default colors, text size, or anything else
+6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
+
+Bonus: Create a dropdown box for the "neighborhood" column which allows users to select a neighborhood and have the chart show only requests from that neighborhood.
