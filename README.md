@@ -31,7 +31,7 @@ Run `pivot.py` as shown below to make a new file that has the reasons for 311 ca
 python3 pivot.py 
 ```
 
-this will output a file called `boston_311_2025.csv
+this will output a file called `boston_311_2025_by_reason.csv`
 
 ### Part 2: Build a D3 visualization with ChatGPT
 
@@ -48,4 +48,10 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 
 ### Part 3: Reflect
 
+1. Make a new file called `dashboard.html`
+2. Ask the llm to load `311_boston_data.csv` data directly and make a bar chart of the number of complaints over time within the year. 
+3. Ask the llm to make a dropbox box that lets you filter by complaint type.
+4. Add more interactive elements of your choice (ex: hover effects, filter by other columns, etc. )
+
 What worked? What didn't? Review your classmates' conversations with ChatGPT in Slack. Fill out an AI reflection form about your experience today.
+
