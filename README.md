@@ -34,6 +34,12 @@ Download data of all 311 calls in Boston from 2025
 wget -O boston_311_2025_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94/download/tmp8_noelom.csv
 ```
 
+Create and activate a virtual environment for this project. This creates folder called `venv/` in your repo that will story python packages for this project.
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
 Install the requirements for the python script you'll run below
 ```
 pip install pandas
