@@ -20,6 +20,8 @@ https://data.boston.gov/dataset/311-service-requests
 
 ### Part 1: Setup
 
+1. Install wget
+
 If on Mac:
 ```sh
 brew install wget
@@ -29,13 +31,13 @@ If on Windowds/WSL
 sudo apt-get install wget
 ```
 
-Create and activate a virtual environment for this project. This creates folder called `venv/` in your repo that will story python packages for this project.
+2. Create and activate a virtual environment for this project. This creates folder called `venv/` in your repo that will story python packages for this project.
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-Install the requirements for the python script you'll run below
+3. Install the requirements for the python script you'll run below
 ```
 pip install pandas
 ```
