@@ -43,8 +43,7 @@ Use your knowledge of the vocabulary of HTML, CSS and JS to prompt ChatGPT. Your
 4. Make the bar chart horizontal instead of vertical
 5. Change the default colors, text size, or anything else
 6. Add a citation for where the data comes from and give yourslves a chart authorship credit in the footnotes
-
-Bonus: Create a button that shows an extended bar chart with all of the remaining counts of the `reason` column. 
+7. Create a button that shows an extended bar chart with all of the remaining counts of the `reason` column. 
 
 
 ### Part 3: Reflect
