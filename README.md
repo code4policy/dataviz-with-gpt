@@ -28,7 +28,7 @@ wget -O boston_311_2025_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4b
 Run `pivot.py` as shown below to make a new file that has the reasons for 311 calls and their counts
 
 ```
-python pivot.py 
+python3 pivot.py 
 ```
 
 this will output a file called `boston_311_2025.csv
