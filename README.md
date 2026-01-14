@@ -22,40 +22,41 @@ https://data.boston.gov/dataset/311-service-requests
 
 1. Install wget
 
-If on Mac:
-```sh
-brew install wget
-```
-If on Windowds/WSL
-```sh
-sudo apt-get install wget
-```
+    If on Mac:
+    ```sh
+    brew install wget
+    ```
+    If on Windowds/WSL
+    ```sh
+    sudo apt-get install wget
+    ```
 
 2. Create and activate a virtual environment for this project. This creates folder called `venv/` in your repo that will story python packages for this project.
-```
-python3 -m venv venv
-source venv/bin/activate
-```
+
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
 3. Install the requirements for the python script you'll run below
-```
-pip install pandas
-```
+
+    ```
+    pip install pandas
+    ```
 
 ### Part 2: Download the data
 
-Download data of all 311 calls in Boston from 2025
-```
-wget -O boston_311_2025_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94/download/tmp8_noelom.csv
-```
+1. Download data of all 311 calls in Boston from 2025
+    ```
+    wget -O boston_311_2025_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94/download/tmp8_noelom.csv
+    ```
 
-Run `pivot.py` as shown below to make a new file that has the reasons for 311 calls and their counts
+2. Run `pivot.py` to make a new file that has the reasons for 311 calls and their counts
+    ```
+    python3 pivot.py 
+    ```
 
-```
-python3 pivot.py 
-```
-
-this will output a file called `boston_311_2025_by_reason.csv`
+    This will output a file called `boston_311_2025_by_reason.csv`
 
 ### Part 3: Build a D3 visualization with ChatGPT
 
