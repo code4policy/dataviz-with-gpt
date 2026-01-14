@@ -20,9 +20,23 @@ https://data.boston.gov/dataset/311-service-requests
 
 ### Part 1: Download the data
 
+If on Mac:
+```sh
+brew install wget
+```
+If on Windowds/WSL
+```sh
+sudo apt-get install wget
+```
+
 Download data of all 311 calls in Boston from 2025
 ```
 wget -O boston_311_2025_raw.csv https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94/download/tmp8_noelom.csv
+```
+
+Install the requirements for the python script you'll run below
+```
+pip install pandas
 ```
 
 Run `pivot.py` as shown below to make a new file that has the reasons for 311 calls and their counts
